@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wanted poster</title>
+</head>
+
+<body>
+    <table width="60%" align="center">
+        <tr>
+            <td>
+                <p align="left"><a href="../admin/project.html" target="_blank">Back to homepage</a></p> <br><br>
+                <form action="mostwantedcriminal.html" method="post">
+                    <fieldset>
+                        <legend>Top Headline</legend>
+                        <p>Headline text:
+                            <input type="text" name="headline">
+
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Images</legend>
+                        Image 1:<input type="file" name="image"><br>
+                        Image 2:<input type="file" name="image"><br>
+                        Image 3:<input type="file" name="image"><br>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reward</legend>
+                        <p>Reward money :</p><input type="text" name="reward">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reward</legend>
+                        Aliases :<br><input type="text" name="alisases">
+                        <br>
+                        Birth :<br><input type="date" name="birth">
+                        <br>
+                        Heir :<br><input type="text" name="heir">
+                        <br>
+                        Eyes :<br><select name="eyes">
+                            <option value="blue">Blue</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+
+                        </select>
+                        <br>
+                        Height :<br><input type="text" name="height">
+                        <br>
+                        Weight :<br><input type="text" name="weight">
+                        <br>
+                        Sex :<br><select name="select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <br>
+                        ID number :<br><input type="number" name="id">
+                        <br>
+                        Occupation :<br><input type="text" name="occup">
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Remarks</legend>
+                        <textarea name="comments" cols="150" rows="10" placeholder="Remarks text"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Caution</legend>
+                        <textarea name="comments" cols="150" rows="10" placeholder="Caution text"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="reset">
+                        <img src="../reset.gif" alt="reset" width="20" height="20">Reset
+                    </button>
+                    <button type="submit">
+                        <img src="../plus.png" alt="createposter" width="20" height="20">Create poster
+                    </button>
+                    <hr />
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
