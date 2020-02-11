@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: 'noviFont';
+    src: url('font/amble-regular-webfont.woff2') format('woff2'),
+         url('font/amble-regular-webfont.woff') format('woff');
+}
+body{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.one {
+     color: rgb(0, 206, 209);
+         font-family: noviFont, Georgia, 'Times New Roman', Times, serif;
+         font-size: 1.5em;
+         font-style: italic;
+         text-transform: uppercase;
+         text-decoration: underline;
+         text-align: left;
+        
+}
+.two {
+    color: black;
+    font-family: 'Sriracha', cursive;
+     font-style: oblique;
+     text-transform: lowercase;
+     text-decoration: line-through;
+     text-align: right;
+}
+.three {
+ color: darkturquoise;
+ font-family:'Courier New', Courier, monospace;
+ text-align: center;
+}
+#first {
+    font-family: Courier, monospace;
+}
+
+#second {
+    font-family: Georgia, serif;
+}
+#third {
+    font-family: Arial, sans-serif;
+}
+#sp {
+    font-weight: 900;
+    font-style: italic;
+    color: red;
+}
+ol li{
+    background-color: yellow;
+    text-shadow: 2px 2px 2px rgba(150, 200, 60, 1);
+}
+a:link{ color:red
+}
+a:visited{color:black;
+   
+}
+a:hover {
+    color: green
+}
+a:active {
+    color; blue
+}

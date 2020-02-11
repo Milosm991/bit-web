@@ -1,0 +1,15 @@
+#prvi {
+    background-color: yellow;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+#drugi {
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    /*overflow: auto;*/
+    max-height: 200px;
+}
