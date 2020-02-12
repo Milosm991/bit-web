@@ -1,0 +1,21 @@
+ul.one {
+    list-style-type: circle;
+}
+ul.second {
+    list-style-type: square;
+}
+ol.first {
+    list-style-type: upper-alpha;
+}
+ol.second{
+    list-style-type: lower-roman;
+}
+ul.third{
+    list-style-image: url(unlikes.jpg);
+    width: 200px;
+}
+ul.fourth{
+    list-style-image: url(unlikes.jpg);
+    width: 200px;
+    list-style-position: inside;
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'ambleregular';
+    src: url('amble-regular-webfont.woff2') format('woff2'),
+         url('amble-regular-webfont.woff') format('woff');
+}
+p {
+background-color: yellow;
+border-width:5px ;
+margin-right: 20px;
+padding: 0px;
+display: inline-block;
+}
+h1{
+    width: 960px;
+    padding: 50px auto;
+    margin: 50px auto;
+    background-color: red;
+    text-align: center;
+    color: white;
+    box-shadow: inset 5px 5px 10px 10px black;
+    font-family: 'ambleregular';
+        
+}
+.one{
+border-style: dashed;
+border-color: red;
+width: 300px;
+    
+}
+.two{
+border-style: solid;
+border-color: green;
+width: 400px;
+visibility: hidden;
+  }
+.three{
+border-style:dashed ;
+border-color: red;
+width: 200px;
+visibility: hidden;
+}
+
