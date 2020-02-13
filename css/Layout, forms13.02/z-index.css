@@ -1,0 +1,49 @@
+div {
+    width: 200px; 
+    height: 200px;
+}
+.one {
+    background-color: red;
+}
+.two {
+    background-color: blue;
+}
+.three {
+    background-color: brown;
+}
+.prvi {
+    background-color: red;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+}
+.drugi {
+    background-color: blue;
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+}
+.treci {
+    background-color: brown;
+    position: relative;
+    left: 150px;
+    bottom: 200px;
+}
+.first {
+    background-color: red;
+    position: absolute;
+    right: 0px;
+}
+.second {
+    background-color: blue;
+    position: absolute;
+    right: 50px;
+    bottom: -550px;
+   }
+.third {
+background-color: brown;
+position: absolute;
+right: 100px;
+bottom: -600px;
+
+}

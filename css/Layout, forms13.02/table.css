@@ -1,0 +1,40 @@
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#prvired {
+    background-color: rgb(192, 42, 42);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    
+}
+td {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  
+}
+th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+tr:hover td{
+    background-color: orange;
+}
+
+.gray:nth-child(2n+1){
+    background-color: rgb(243, 243, 243);
+}
+
