@@ -1,0 +1,183 @@
+#big{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+}
+.banner{
+    width: 100%;
+}
+h3{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 2;
+    color: white;
+    
+}
+h3 span{
+    color: orange;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-left: 3px;
+}
+.firstul{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    list-style-type: none;
+}
+.firstul li{
+    margin: 0px 10px;
+    color: white;
+}
+.text{
+   position: absolute;
+   left: 17px;
+    top: 249px;
+   color:white;
+   font-size: 45px;
+   width: 100%;
+  }
+  .us{
+      position: relative;
+      left: 512px;
+  }
+  .read{
+      position: absolute;
+      left: 511px;
+      top: 391px;
+      background-color: rgb(14, 68, 138);
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+  }
+  .first{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+         
+  }
+  .first article{
+     width: 20%;
+
+  }
+  .secondimage{
+      width: 100%;
+  }
+  .weare{
+    margin: 15px 512px 17px 523px;
+    border-bottom: solid black 2px;
+    padding-left: 14px;
+  }
+  .firsth4{
+      color: rgb(33, 96, 189);
+  }
+ .strelice li{
+     list-style-image: url("images/arrow_bullet.png");
+
+ }
+ .second{
+     display: flex;
+     width: 100%;
+ }
+ .jenn {
+     width: 30%;
+     background-color: lightblue;
+     margin-right: 5%;
+     padding: 10px 10px;
+ }
+ .will {
+    width: 30%;
+    background-color: lightblue;
+    margin-right: 5%;
+    padding: 10px 10px;
+}
+.selena {
+    width: 30%;
+    background-color: lightblue;
+    padding: 10px 10px;
+}
+.star{
+    width: 40px;
+    height: 15px;
+}
+.face{
+  height: 70px;
+  width: 70px;  
+  border-radius: 50%;
+  border: solid white 1px;
+}
+
+.ppl{
+    display: flex;
+}
+.abc{
+    padding-left: 30px;
+}
+.people{
+    margin:100px 499px 17px 500px;
+    border-bottom: solid black 2px;
+    padding-left: 13px;
+  }
+  .third{
+      width: 100%;
+    
+  }
+  .naslov{
+      display: flex;
+  }
+  .prvi{
+      width: 25%;
+      background-color: lightgreen;
+      height: 200px;
+  }
+  .drugi{
+    width: 25%;
+    background-color: red;
+    height: 200px;
+}
+.treci{
+    width: 25%;
+    background-color: blue;
+    height: 200px;
+}
+.cetvrti{
+    width: 25%;
+    height: 200px;
+    background-color: lightskyblue;
+}
+.house{
+    height: 200px;
+    padding-left: 50px;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+}
+.getin{
+    margin: 102px 479px 16px 474px;
+    border-bottom: solid black 2px;
+    padding-left: 12px;
+}
+footer{
+    box-sizing: border-box;
+    width:100%
+  
+}
+form{
+    width: 80%;
+}
+.mail{
+    margin:17px 540px;
+    border-bottom: solid black 2px;
+    padding-left: 26px;
+  }
+  textarea{width: 100%;}
+  
+
+     
