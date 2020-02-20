@@ -1,0 +1,79 @@
+@import "mixins";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #e3f2fd;
+}
+
+.container {
+    width:$sirina;
+    margin: 0 auto;
+    h1 {
+        padding: 20px 0;
+        text-align: center;
+        background: red;
+        color:$color-boja;
+        @include textShadow(2px 2px 0 rgba(0,0,0,.4));
+        }
+        h2 {
+            margin-bottom: 0px;
+            padding-left: 10px;
+            text-align: left;
+            background: $color-boja;
+            color: white;
+            @include boxShadow( 0 0 5px 5px rgba(1, 1, 5, .3));
+        }
+        & .podaci{
+            background-color: black;
+        }
+}
+
+/*h2 {
+    margin-bottom: 0px;
+    padding-left: 10px;
+    text-align: left;
+    background: #2979ff;
+    color: white;
+}*/
+
+img {
+    height: 400px;
+    margin: 40px auto 40px;
+    display: block;
+}
+
+table {
+    width: 100%;
+    color: #333;
+    background: white;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #eee;
+}
+
+td {
+    padding: 5px 0;
+}
+
+td:first-child {
+    width: 300px;
+    padding-left: 10px;
+}
+#footer{
+    color: blue;
+    background-color: yellow;
+    font-style: italic;
+    border:solid 3px red;
+}
+.drugip{
+    @extend #footer;
+    border: solid 3px blue;
+
+}
+.trecip{
+    @extend #footer;
+    border: solid 3px green;
+}
