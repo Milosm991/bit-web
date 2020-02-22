@@ -16,16 +16,19 @@
             <h3><span>BUILD</span> ESTATE</h3>
             <nav>
                 <ul class="firstul">
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>SERVICES</li>
-                    <li>CONTACT US</li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
             </nav>
             <p class="text">WE SHAPE OUR BUILDINGS THEREAFTER THEY SHAPE<br><span class="us">US</span></p>
             <p class="read">Read more</p>
         </header>
-        <h2 class="weare">Who We Are</h2>
+        <div id="whoh2">
+        <h2>Who We Are</h2>
+        <div id="square"></div>
+        </div>
         <main class="first">
 
             <article class="firstarticle">
@@ -54,7 +57,10 @@
                 </ul>
             </article>
         </main>
-        <h2 class="people">What People Says</h2>
+        <div id="whoh2">
+        <h2>What People Says</h2>
+        <div id="square"></div>
+        </div>
         <main class="second">
 
             <div class="will">
@@ -65,7 +71,7 @@
                         <img class="star" src="images/stars.jpg">
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, totam repellendus. Quidem
+                <p class="boja">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, totam repellendus. Quidem
                     accusamus temporibus ab voluptatem omnis, necessitatibus alias delectus.</p>
             </div>
             <div class="jenn">
@@ -76,7 +82,7 @@
                         <img class="star" src="images/stars.jpg">
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, totam repellendus. Quidem
+                <p class="boja">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, totam repellendus. Quidem
                     accusamus temporibus ab voluptatem omnis, necessitatibus alias delectus.</p>
             </div>
             <div class="selena">
@@ -87,23 +93,41 @@
                         <img class="star" src="images/stars.jpg">
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, totam repellendus. Quidem
+                <p class="boja"></p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, totam repellendus. Quidem
                     accusamus temporibus ab voluptatem omnis, necessitatibus alias delectus.</p>
             </div>
         </main>
+        <div id="whoh2">
         <h2 class="getin">Get In Touch With Us</h2>
+        <div id="square"></div>
+    </div>
         <main class="third">
             <div class="naslov">
-                <div class="prvi">1</div>
-                <div class="drugi">2</div>
-                <div class="treci">3</div>
+                <div class="prvi">
+                    <h4 class="contacth4">CONTACT US</h4>
+                    <div class="contact"><img class="tel" src="images/phone.png">
+                    <p class="tele boja">+0(12)000 123 3120</p></div>
+                    <div id="mail"><img class="slikamail" src="images/email.jpg">
+                    <p class="textmail boja">mail@example.com</p></div>
+                </div>
+                <div class="drugi">
+                    <h4 class="connect">CONNECT US</h4>
+                        <img class="fb" src="images/facebook.ico">
+                        <img class="twit" src="images/twitter.png">
+                        <img class="insta" src="images/insta.png">
+                        <img class="link" src="images/linkedin.png">
+                </div>
+                <div class="treci"><h4 class="address">ADDRESS</h4>
+                    <p class='add boja'>1680 Richmond ST, Corner in, ON N58 <span class="usa boja">3d7, USA</span></p>
+                </div>
                 <div class="cetvrti"><img class="house" src="images/house.png"></div>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181139.3549168362!2d20.282514667490318!3d44.8154032883584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2sBelgrade!5e0!3m2!1sen!2srs!4v1582110970667!5m2!1sen!2srs"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596698663!2d-74.25986773739224!3d40.697149413874705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1582363851604!5m2!1ssr!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </main>
+        <div id="whoh2">
         <h2 class="mail">Mail Us</h2>
+        <div id="square"></div>
+    </div>
         <footer>
             <form>
                 <div class="polja">
@@ -111,8 +135,8 @@
                     <input type="email" name="Email" placeholder="Email">
                     <input type="text" name="telephone" placeholder="Telephone">
                 </div>
-                <textarea name="comments">Message</textarea><br>
-                <input type="submit" name="submit" value="Submit">
+                <textarea name="comments" rows="6">Message</textarea><br>
+                <input class="sub" type="submit" name="submit" value="Submit">
             </form>
 
         </footer>

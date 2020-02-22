@@ -1,7 +1,29 @@
+* {
+    box-sizing: border-box;
+}
 #big{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(fonts/Roboto-Light.ttf);
 }
 header{
     position: relative;
@@ -15,6 +37,7 @@ h3{
     left: 10px;
     z-index: 2;
     color: white;
+    font-family: Roboto;
     
 }
 h3 span{
@@ -30,10 +53,17 @@ h3 span{
     top: 0px;
     right: 0px;
     list-style-type: none;
+    font-family: Roboto;
 }
 .firstul li{
-    margin: 0px 10px;
-    color: white;
+    color: #fff;
+    list-style-type: none;
+    padding: 10px 15px;
+    
+}
+a {
+    text-decoration: none;
+    color: #fff;
 }
 .text{
    position: absolute;
@@ -42,10 +72,12 @@ h3 span{
    color:white;
    font-size: 45px;
    width: 100%;
+   font-family: RobotoLight;
   }
   .us{
       position: relative;
       left: 512px;
+      font-family: RobotoLight;
   }
   .read{
       position: absolute;
@@ -55,6 +87,7 @@ h3 span{
       color: white;
       padding: 10px;
       border-radius: 15px;
+      font-family: RobotoLight;
   }
   .first{
       width: 100%;
@@ -66,19 +99,41 @@ h3 span{
      width: 20%;
 
   }
+  .first article{
+    font-family: RobotoMedium;
+  }
   .secondimage{
       width: 100%;
   }
-  .weare{
-    margin: 15px 512px 17px 523px;
-    border-bottom: solid black 2px;
-    padding-left: 14px;
-  }
+  #whoh2 {
+    font-family: RobotoLight;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin: 5% 40% 3% 40%;
+    text-align: center;
+    position: relative;
+    
+}
+#square {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid;
+    transform: rotateZ(45deg);
+    z-index: 1;
+    position: absolute;
+    top: 86%;
+    left: 47%;
+}
   .firsth4{
       color: rgb(33, 96, 189);
+      font-family: RobotoLight;
   }
  .strelice li{
      list-style-image: url("images/arrow_bullet.png");
+     margin-left: 0px;
+     font-family: RobotoLight;
+     
 
  }
  .second{
@@ -103,7 +158,7 @@ h3 span{
     padding: 10px 10px;
 }
 .star{
-    width: 40px;
+    width: 60px;
     height: 15px;
 }
 .face{
@@ -119,19 +174,14 @@ h3 span{
 .abc{
     padding-left: 30px;
 }
-.people{
-    margin:100px 499px 17px 500px;
-    border-bottom: solid black 2px;
-    padding-left: 13px;
-  }
-  .third{
+.third{
       width: 100%;
     
   }
-  .naslov{
+.naslov{
       display: flex;
   }
-  .prvi{
+.prvi{
       width: 25%;
       background-color: lightgreen;
       height: 200px;
@@ -159,25 +209,108 @@ iframe{
     width: 100%;
     height: 300px;
 }
-.getin{
-    margin: 102px 479px 16px 474px;
-    border-bottom: solid black 2px;
-    padding-left: 12px;
-}
 footer{
-    box-sizing: border-box;
     width:100%
   
 }
 form{
     width: 80%;
+    margin: 0 auto;
 }
-.mail{
-    margin:17px 540px;
-    border-bottom: solid black 2px;
-    padding-left: 26px;
-  }
-  textarea{width: 100%;}
-  
+textarea{
+      width: 940px;
+      margin-left: 15px
+    }
+.polja{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    padding: 10px 10px;
+    width: 30%;
+}
+.sub{
+    width: 100px;
+    padding: 5px 5px;
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-family: RobotoMedium;
+    margin-left: 13px;
+}
+.contacth4{
+    margin: 28px 4px 27px 97px;
+    color: white;
+    font-family: Roboto;
+}
+.contact{
+    display: flex;
+    margin: 10px 58px 10px 71px;
 
-     
+}
+#mail{
+    display: flex;
+    margin: 12px 65px 1px 64px;
+   
+}
+.tel {
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+.slikamail{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+.tele{
+  margin: auto;
+  font-family: RobotoLight;
+}
+.textmail{
+    font-family: RobotoLight;
+}
+.fb{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 10px 53px;
+}
+.twit{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 10px 10px;
+}
+.insta{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 10px 10px;
+}
+.link{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 10px 10px;
+}
+.connect{
+    font-family: Roboto;
+    margin: 28px 4px 27px 97px;
+    color: white;
+}
+.address{
+    font-family: Roboto;
+    margin: 28px 4px 27px 97px;
+    color: white;
+}
+.add{
+    margin: 41px 10px 10px 25px;
+    font-family: RobotoLight;
+}
+.usa{
+    margin-left: 86px;
+    font-family: RobotoLight;
+}
+.boja{
+    color: white;
+    font-family: RobotoLight;
+}
