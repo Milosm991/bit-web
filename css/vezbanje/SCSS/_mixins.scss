@@ -1,0 +1,9 @@
+$color-boja: rgb(12, 201, 248);
+$sirina: 700px;
+
+@mixin textShadow($shadow){
+   text-shadow: $shadow;
+}
+@mixin boxShadow($bShadow){
+    box-shadow: $bShadow;
+}
