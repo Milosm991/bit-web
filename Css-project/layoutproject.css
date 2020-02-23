@@ -5,6 +5,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    
 }
 @font-face {
     font-family: 'RobotoMedium';
@@ -188,12 +189,12 @@ a {
   }
   .drugi{
     width: 25%;
-    background-color: red;
+    background-color: rgba(255, 113, 113, 0.993);
     height: 200px;
 }
 .treci{
     width: 25%;
-    background-color: blue;
+    background-color: rgb(93, 93, 255);
     height: 200px;
 }
 .cetvrti{
@@ -218,13 +219,15 @@ form{
     margin: 0 auto;
 }
 textarea{
-      width: 940px;
+      width: 100%;
       margin-left: 15px
     }
 .polja{
+    width: 100%;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-around;
+   
 }
 input{
     padding: 10px 10px;
@@ -313,4 +316,114 @@ input{
 .boja{
     color: white;
     font-family: RobotoLight;
+}
+
+@media all and (max-width: 1200px) {
+    .text {
+        position: absolute;
+        left: 57px;
+        top: 209px;
+    }
+    .us {
+        position: relative;
+        left: 429px;
+    }
+    .read {
+        position: absolute;
+        left: 470px;
+        top: 360px;
+    }
+    .contacth4 {
+        margin: 33px 4px 27px 93px;
+    }
+    .slikamail {
+        margin-left: -13px;
+    }
+}
+.connect {
+    margin: 27px 4px 27px 97px;
+}
+.address {
+     margin: 28px 4px 27px 97px;
+}
+@media all and (max-width: 620px) {
+    .text{
+        position: absolute;
+        left: 17px;
+        top: 32px;
+    }
+    .read{
+        
+        position: absolute;
+        left: 263px;
+        top: 260px;
+    }
+    .us{
+        position: relative;
+        left: 264px;
+    }
+}
+@media all and (max-width: 780px) {
+    .text{
+        position: absolute;
+        left: 101px;
+        top: 64px;
+    }
+    .read{
+        
+        position: absolute;
+        left: 327px;
+        top: 277px;
+    }
+    .us{
+        position: relative;
+        left: 236px;;
+    }
+    .tel{
+        margin-left: -19px;
+    }
+    .slikamail{
+        margin-left: -41px;
+    }
+    .textmail{
+        margin-top: 0px;
+    }
+    .contacth4{
+        margin: 28px 4px 27px 50px;
+    }
+    .connect{
+        margin: 31px 4px 27px 43px;
+    }
+    .address{
+        margin: 30px 4px 27px 60px;
+    }
+    @media all and (min-width: 781px){
+    .text{
+        position: absolute;
+         left: 111px;
+         top: 32px;
+    }
+    .read{
+        position: absolute;
+        left: 354px;
+        top: 260px;
+    }
+    .contacth4 {
+       margin: 28px 4px 27px 47px;
+    }
+    .tel {
+        margin-left: -20px;
+    }
+    .slikamail {
+        margin-left: -39px;
+    }
+    .textmail {
+        margin-top: 0px;
+    }
+    .connect {
+        margin: 28px 4px 27px 49px;
+    }
+    .address {
+        margin: 28px 4px 27px 57px;
+    }
 }
