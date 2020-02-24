@@ -1,0 +1,104 @@
+.container-fluid{
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: #2c3e50;
+    color: white;
+}
+
+.bit{
+    padding-top: 7px;
+}
+a{
+    color: white;
+}
+.main{
+    background-color: #18bc9c;
+    width: 100%;
+}
+.profile{
+    padding-top: 80px;
+    display: block;
+    width: 100%;
+}
+.boot{
+    color:white;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 64px;
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 59px;
+}
+.zvezdica{
+    border-bottom: solid white 2px;
+    width: 30%;
+}
+.drugazvezdica{
+    border-bottom: solid white 2px;
+    width: 30%;
+}
+.web{
+    display: block;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 15px;
+    color: white;
+}
+div.row.main{
+    margin:0px;
+}
+.zvezdicap{
+    border-bottom: solid black 2px;
+    width: 30%;
+}
+.drugazvezdicap{
+    border-bottom: solid black 2px;
+    width: 30%;
+}
+h2{
+    margin-top: 40px;
+    margin-left: 62px;
+    font-weight: bold;
+}
+.pics{
+    width:80%;
+    margin: 20px auto 30px auto;
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.slika{
+    width: 30%;
+    padding-bottom: 15px;
+}
+.zvezdicaa{
+    border-bottom: solid white 2px;
+    width: 30%;
+}
+.drugazvezdicaa{
+    border-bottom: solid white 2px;
+    width: 30%;
+}
+.textab{
+    margin-left: 93px;
+    color: white;
+    padding-top: 30px;
+}
+.aboutp{
+    padding-top: 40px;
+    color: white;
+}
+.find{
+    border: solid white 2px;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    margin-left: 68px;
+    margin-right: 85px;
+    margin-bottom: 30px;
+}
