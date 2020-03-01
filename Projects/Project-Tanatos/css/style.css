@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box; }
+
+header {
+  position: relative;
+  margin-bottom: 80px; }
+  header nav {
+    position: absolute;
+    left: 345px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding-top: 40px; }
+
+.banner {
+  width: 100%;
+  display: block; }
+
+button {
+  border-style: none;
+  background-color: transparent;
+  color: white; }
+
+p {
+  color: white;
+  font-size: 20px; }
+  p span {
+    color: orange; }
+
+.mainart {
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  width: 40%;
+  text-align: center;
+  color: white; }
+
+.naslov {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 60px; }
+  .naslov span {
+    color: orange; }
+
+.btn.mainbtn {
+  position: relative;
+  border: solid 2px grey;
+  color: white; }
+
+.btn.mainbtn:hover {
+  background-color: orange; }
+
+.arrowd {
+  position: absolute;
+  top: 115%;
+  left: 46%; }
+
+.second-sec {
+  color: grey;
+  padding-top: 30px; }
+
+.first {
+  margin-bottom: 80px; }
+
+.circle {
+  border: solid 2px lightgrey;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  align-items: center; }
+
+h6 {
+  text-align: center;
+  padding-top: 30px; }
+
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#pozadina {
+  background-image: url(../img/newsletter-background.jpg);
+  width: 100%;
+  height: 200px;
+  align-items: center; }
+  #pozadina input {
+    border: none;
+    border-radius: 7px;
+    height: 40px; }
+
+#btn3 {
+  width: 250px;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 7px;
+  height: 40px; }
+
+.naslov {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px; }
+  .naslov h2 {
+    color: black; }
+  .naslov h2 span {
+    color: orange; }
+  .naslov p {
+    color: gray;
+    font-size: medium;
+    font-weight: normal; }
+
+.slika {
+  padding-bottom: 15px;
+  padding-right: 10px; }
+
+.btnpic {
+  text-align: center; }
+
+.btn.picsbtn {
+  margin-bottom: 80px;
+  margin-top: 80px;
+  width: 200px;
+  border: solid 0.5px #dacfcf;
+  border-radius: 7px;
+  padding: 10px;
+  font-weight: bold;
+  color: #423f3f; }
+
+.testimonials {
+  background-image: url(../img/testimonials-background.jpg);
+  height: 500px;
+  align-items: center;
+  margin-bottom: 50px; }
+  .testimonials .tekst {
+    width: 100%;
+    text-align: center;
+    align-items: center; }
+  .testimonials img {
+    position: relative;
+    left: 45%;
+    top: 100px; }
+  .testimonials p {
+    position: relative;
+    top: 150px;
+    font-style: italic;
+    width: 100%; }
+  .testimonials .john {
+    font-style: normal;
+    width: 100%; }
+  .testimonials .left {
+    position: relative;
+    left: 20%;
+    top: 50%; }
+  .testimonials .right {
+    position: relative;
+    left: 80%;
+    top: 50%; }
+
+.tim p {
+  text-align: center;
+  color: grey;
+  font-weight: normal;
+  padding-top: 20px; }
+
+.ii {
+  display: flex;
+  justify-content: center; }
+
+.tim i {
+  padding-left: 10px;
+  width: 50px; }
+
+footer {
+  background-image: url(../img/contact-background.jpg);
+  padding-bottom: 200px; }
+  footer .foot {
+    padding-top: 50px;
+    color: white; }
+  footer textarea {
+    width: 100%; }
+
+.form-row {
+  margin-bottom: 20px; }
+
+.btn.hireus {
+  border: solid 2px orange;
+  color: white;
+  font-weight: bold;
+  background-color: orange;
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 10px; }
+
+#copy {
+  line-height: 100px;
+  background-color: #3f3f3f; }
+
+#gray-color {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */
