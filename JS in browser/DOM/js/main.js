@@ -43,17 +43,77 @@
 // }
 // replace("Hello");
 
-function drop(data, ) {
-    var body = document.querySelector("body");
-    var element = document.createElement("select");
-    var data = ["Huawei", "Samsung", "Xiaomi"];
-    for (var i = 0; i < data.length; i++) {
-        var opt = document.createElement("option");
-        opt.textContent = data[i];
-        element.appendChild(opt)
-    }
+// function drop(data, ) {
+//     var body = document.querySelector("body");
+//     var element = document.createElement("select");
+//     for (var i = 0; i < data.length; i++) {
+//         var opt = document.createElement("option");
+//         opt.textContent = data[i];
+//         element.appendChild(opt)
+//     }
 
-    body.appendChild(element);
+//     body.appendChild(element);
 
-}
-drop()
+// }
+// drop(["Huawei", "Samsung", "Xiaomi", "iphone"])
+
+// var form = document.querySelector("form");
+// function createForm(inp, lab, req) {
+
+//     var input = document.createElement("input");
+//     var label = document.createElement("label");
+//     var a = document.createTextNode(lab);
+
+//     input.setAttribute("type", inp);
+//     label.appendChild(a);
+//     if (req) {
+//         input.setAttribute("required", "required")
+//     }
+
+//     form.appendChild(label);
+//     form.appendChild(input);
+
+// }
+// createForm("password", "Password")
+// createForm("text", "Name", true)
+// createForm("email", "Email")
+
+// function button(inp, sub) {
+//     var sub = document.createElement(inp)
+//     sub.setAttribute("type", "submit")
+//     form.appendChild(sub)
+// }
+
+// button("input", "submit")
+
+// function addImg(a) {
+//     var div = document.querySelector(".slider");
+
+//     for (var i = 0; i < a.length; i++) {
+//         var img = document.createElement("img");
+//         img.setAttribute("src", a[i])
+//         div.appendChild(img);
+//     };
+
+//     var b = div.firstElementChild;
+//     b.className = "active";
+// }
+// addImg(["img/coff.jpg", "img/coffee.jpg", "img/image.jpg"]);
+
+
+
+// function foo() {
+//     function sliderImg() {
+//         var c = document.querySelector(".active");
+//         c.className = "";
+//         var change = c.nextElementSibling;
+
+//         if (change) {
+//             change.className = "active";
+//         } else {
+//             document.querySelector('.slider img').classList.add("active");
+//         }
+//     }
+//     sliderImg()
+// }
+// setInterval(foo, 2000)

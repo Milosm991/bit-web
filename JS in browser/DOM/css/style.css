@@ -1,10 +1,16 @@
-.drugi{
-    background-color: green;
+.drugi {
+  background-color: green;
 }
-.list{
-    background-color: red;
+.list {
+  background-color: red;
 }
-.new-list{
-    background-color: blue;
-    text-transform: uppercase;
+.new-list {
+  background-color: blue;
+  text-transform: uppercase;
+}
+.active {
+  display: block;
+}
+img {
+  display: none;
 }
