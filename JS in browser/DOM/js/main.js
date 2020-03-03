@@ -118,51 +118,55 @@
 // }
 // setInterval(foo, 2000)
 
-function addImg(a){
-    var div = document.querySelector("#first");
-    for(var i=0; i<a.length; i++){
-        var b = document.createElement("img");
-        b.setAttribute("src", a[i])
-        div.appendChild(b)
-    };
-    var c = div.firstElementChild;
-    c.className = "active";
-    
-}
-addImg(["./img/coff.jpg", "./img/coffee.jpg", "./img/image.jpg"])
+// function addImg(a) {
+//     var div = document.querySelector("#first");
+//     for (var i = 0; i < a.length; i++) {
+//         var b = document.createElement("img");
+//         b.setAttribute("src", a[i])
+//         div.appendChild(b)
+//     };
+//     var c = div.firstElementChild;
+//     c.className = "active";
 
-function addImg2(a){
-    var div = document.querySelector("#second");
-    for(var i=0; i<a.length; i++){
-        var b = document.createElement("img");
-        b.setAttribute("src", a[i])
-        div.appendChild(b)
-    };
-    var c = div.firstElementChild;
-    c.className = "active";
-    
-}
-addImg2(["./img/coff.jpg", "./img/coffee.jpg", "./img/image.jpg"])
+// }
+// addImg(["./img/coff.jpg", "./img/coffee.jpg", "./img/image.jpg"])
 
-function threeSec(){
-function changePos(){
-    var a = document.querySelector("#first .active");
-    var div = document.querySelector("#second");
-    div.appendChild(a);
-    // document.querySelector('#first img').classList.add("active");
-    
-}
-changePos()
-}
-setTimeout(threeSec, 3000)
+// function addImg2(a) {
+//     var div = document.querySelector("#second");
+//     for (var i = 0; i < a.length; i++) {
+//         var b = document.createElement("img");
+//         b.setAttribute("src", a[i])
+//         div.appendChild(b)
+//     };
+//     var c = div.firstElementChild;
+//     c.className = "active";
 
-function sixSec(){
-    function secondPos(){
-        var b = document.querySelector("#second .active");
-        var divv = document.querySelector("#first");
-        divv.appendChild(b);
-        // document.querySelector('#second img').classList.add("active");
-}
-    secondPos()
-}
-setTimeout(sixSec, 6000)
+// }
+// addImg2(["./img/coff.jpg", "./img/coffee.jpg", "./img/image.jpg"])
+
+// function threeSec() {
+//     function changePos() {
+//         var a = document.querySelector("#first .active");
+//         var div = document.querySelector("#second");
+//         div.appendChild(a);
+//         document.querySelector('#first img').classList.add("active");
+
+//     }
+//     changePos()
+//     setTimeout(sixSec, 3000);
+// }
+
+// function sixSec() {
+//     function secondPos() {
+//         var b = document.querySelector("#second .active");
+//         var divv = document.querySelector("#first");
+//         divv.appendChild(b);
+//         document.querySelector('#second img').classList.add("active");
+//     }
+//     secondPos()
+//     setTimeout(threeSec, 3000)
+// }
+
+// threeSec();
+
+
