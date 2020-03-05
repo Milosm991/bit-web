@@ -13,7 +13,7 @@ var moveMario = function (event) {
     if (event.keyCode === 39) {
         marioRun.className = "marioRR";
         mario.className = "active";
-        value--;
+        value -= 10;
         interval = setInterval(moving, 20);
     }
 
@@ -33,7 +33,7 @@ var moveMario2 = function (event) {
     if (event.keyCode === 37) {
         marioRun.className = "activeleft";
         mario.className = "active";
-        value++;
+        value += 10;
         interval = setInterval(moving, 20);
     }
 
@@ -47,10 +47,18 @@ var moveMario3 = function (event) {
         clearInterval(interval)
     }
 }
+
+var jump = function (event) {
+    if (event.keyCode === 32) {
+        marioRun.className = "jumping";
+        mario.className = "active";
+    }
+}
 body.addEventListener("keydown", moveMario)
 body.addEventListener("keyup", moveMario1)
 body.addEventListener("keydown", moveMario2)
 body.addEventListener("keyup", moveMario3)
+body.addEventListener("keydown", jump)
 
 // function startMoving(event) {
 //     if (event.keyCode === 39) {

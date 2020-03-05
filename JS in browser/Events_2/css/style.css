@@ -6,6 +6,7 @@ body{
     top:0;
     left: 0;
     background-size: cover;
+    transition: all 0.5s;
 }
 img{
     position: absolute;
@@ -28,6 +29,10 @@ img{
 .activeleft{
     display: block;
     transform: rotateY(180deg);
+ }
+ .jumping{
+     position: absolute;
+     top: 600px;
  }
  /*
 .mario{
