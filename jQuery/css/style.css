@@ -1,0 +1,12 @@
+.one {
+  border-bottom: red solid 1px;
+}
+.list {
+  text-transform: uppercase;
+}
+.active {
+  color: orange;
+}
+.backColor {
+  background-color: skyblue;
+}

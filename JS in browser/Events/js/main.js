@@ -26,16 +26,29 @@
 
 // sendText()
 
-// function movePlayer() {
-//     var a = document.querySelector("body");
-//     var img = document.querySelector("img");
+$(function () {
 
-//     a.addEventListener("click", function (event) {
-//         img.style.left = event.clientX + 'px';
-//         img.style.top = event.clientY + 'px';
-//     })
-// }
-// movePlayer();
+    // function movePlayer() {
+    //     var a = document.querySelector("body");
+    //     var img = document.querySelector("img");
+
+    //     a.addEventListener("click", function (event) {
+    //         img.style.left = event.clientX + 'px';
+    //         img.style.top = event.clientY + 'px';
+    //     })
+    // }
+    // movePlayer();
+    /////////jQuery
+    $('body').on('click', function (event) {
+        $('img').css({ "top": event.clientY + "px", "left": event.clientX + 'px' });
+        // $('img').css("left": event.clientX + 'px');
+    })
+
+
+
+})
+
+
 
 // function stopMov() {
 

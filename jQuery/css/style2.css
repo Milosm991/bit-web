@@ -1,0 +1,22 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+div {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.style {
+  color: red;
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+}
+span {
+  color: white;
+}
+img {
+  width: 300px;
+}
