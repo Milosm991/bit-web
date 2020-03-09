@@ -14,3 +14,16 @@ xml.onload = function () {
 
 
 }
+
+// var location = new XMLHttpRequest();
+// location.open("GET", "http://www.geoplugin.net/xml.gp?ip=5.134.110.69");
+// location.send();
+
+// var button = document.querySelector('button');
+
+// button.onclick = function(){
+//     var xmlDoc = location.responseXML;
+//     var input = document.querySelector('input');
+//     var ip = xmlDoc.querySelector("geoplugin_request").textContent;
+//     input.value = ip;
+// }
