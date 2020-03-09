@@ -2,7 +2,7 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-div {
+/* div {
   width: 100%;
 
   display: flex;
@@ -19,4 +19,20 @@ span {
 }
 img {
   width: 300px;
+} */
+.selected {
+  border: solid 2px red;
+}
+/* img {
+  width: 33%;
+} */
+.first {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.second {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
 }
