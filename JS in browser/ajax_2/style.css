@@ -1,0 +1,39 @@
+/* body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* First div */
+
+/* #one img {
+    width: 33%;
+    margin-bottom: 20px;
+} */
+
+/* Second div*/
+
+/* #two img {
+    width: 33%;
+/* } */
+
+/* button {
+  position: fixed;
+}
+img {
+  width: 200px;
+} */
+/*  */
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+input {
+  height: 15px;
+}

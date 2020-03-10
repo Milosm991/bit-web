@@ -15,15 +15,20 @@ xml.onload = function () {
 
 }
 
-// var location = new XMLHttpRequest();
-// location.open("GET", "http://www.geoplugin.net/xml.gp?ip=5.134.110.69");
-// location.send();
+// function handler1() {
+//     var getInput = document.querySelector('input').value;
+//     console.log(getInput)
+//     var xmlhttp = new XMLHttpRequest();
+//     xmlhttp.open("GET", "http://www.geoplugin.net/xml.gp?ip=" + getInput);
+//     xmlhttp.send();
 
-// var button = document.querySelector('button');
+//     xmlhttp.onload = function () {
+//         var getCountry = xmlhttp.responseXML.querySelector("geoplugin_countryName").textContent;
 
-// button.onclick = function(){
-//     var xmlDoc = location.responseXML;
-//     var input = document.querySelector('input');
-//     var ip = xmlDoc.querySelector("geoplugin_request").textContent;
-//     input.value = ip;
+//         $("body").append("<h1></h1>");
+//         $("h1").append(getCountry);
+//     }
 // }
+// var btn = document.querySelector("button")
+
+// btn.addEventListener("click", handler1);
