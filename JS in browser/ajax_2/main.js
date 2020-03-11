@@ -134,23 +134,52 @@ function handler() {
             div.appendChild(divv)
             main.appendChild(div)
         }
+        clickk();
     });
+}
 
-    $(".user").on("click" = function (event) {
-        var user = event.currentTarget.querySelector('p').textContent
+
+
+function clickk(){
+    $(".user").on("click", function (event) {
+        var user = event.currentTarget.querySelector('p').textContent;
         var request1 = new XMLHttpRequest();
-        request1.open("GET", "users/" + user + "/repos");
+        request1.open("GET", "https://api.github.com/users/" + user + "/repos");
         request1.send();
 
         request1.onload = function () {
             var data = JSON.parse(request1.responseText);
             var section = document.querySelector("section");
-        }
-
-    })
-
-
+            for(var i=0; i<data.length; i++){
+                var divR = document.createElement("div");
+                divR.textContent = data[i].name;
+                section.appendChild(divR)
+            }
+        }    
+    })   
 }
 
 var search = document.querySelector("button")
 search.addEventListener("click", handler)
+
+
+
+// function clickk(event){
+//     var user = event.currentTarget.querySelector('p').textContent;
+//     var fullUrl = "https://api.github.com/users/" + user + "/repos";
+
+//     var request1 = $.ajax({
+//         url: fullUrl,
+//         method: "GET"
+//     });
+//     request1.done(function(response){
+//         var data1 = JSON.parse(response);
+//         var section = document.querySelector("section");
+//         for(var i=0; i<data1.lengtht; i++){
+//             var divR = document.createElement("div");
+//             divR.textContent = data[i].name;
+//             section.appendChild(divR)
+//         }
+
+//     })
+// }
