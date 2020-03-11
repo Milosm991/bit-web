@@ -37,3 +37,26 @@ header {
 input {
   height: 15px;
 }
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.profile {
+  width: 100%;
+}
+.profile div {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+
+p {
+  width: 10%;
+  margin: 0 auto;
+}
