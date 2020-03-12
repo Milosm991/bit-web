@@ -140,22 +140,7 @@ function handler() {
 
 
 
-<<<<<<< HEAD
-    // $(".user").on("click" = function (event) {
-    //     var user = event.currentTarget.querySelector('p').textContent
-    //     var request1 = new XMLHttpRequest();
-    //     request1.open("GET", "users/" + user + "/repos");
-    //     request1.send();
-
-    //     request1.onload = function () {
-    //         var data = JSON.parse(request1.responseText);
-    //         var section = document.querySelector("section");
-}
-
-
-
-=======
-function clickk(){
+function clickk() {
     $(".user").on("click", function (event) {
         var user = event.currentTarget.querySelector('p').textContent;
         var request1 = new XMLHttpRequest();
@@ -165,18 +150,17 @@ function clickk(){
         request1.onload = function () {
             var data = JSON.parse(request1.responseText);
             var section = document.querySelector("section");
-            for(var i=0; i<data.length; i++){
+            for (var i = 0; i < data.length; i++) {
                 var divR = document.createElement("div");
                 divR.textContent = data[i].name;
                 section.appendChild(divR)
             }
-        }    
-    })   
+        }
+    })
 }
 
 var search = document.querySelector("button")
 search.addEventListener("click", handler)
->>>>>>> fe25b05fe520cdf165edb8022b3e8f7e5f775614
 
 
 
