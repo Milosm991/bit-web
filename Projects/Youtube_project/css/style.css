@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(187, 43, 43);
+  background-image: url(https://www.elsetge.cat/myimg/f/230-2306952_hot-red-color.jpg);
+  background-size: cover;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(219, 188, 188);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.search {
+  width: 80%;
+  padding: 50px;
+}
+.search input {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.search button {
+  height: 40px;
+  width: 10%;
+  border-radius: 10px;
+  border: none;
+}
+
+article {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+main img {
+  width: 300px;
+}
+h2 {
+  color: white;
+  display: inline-block;
+}
+p {
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+}
+main div {
+  width: 33%;
+  display: inline-block;
+  height: 300px;
+}
