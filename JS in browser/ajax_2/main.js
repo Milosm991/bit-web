@@ -136,21 +136,21 @@ function handler() {
         }
     });
 
-    $(".user").on("click" = function (event) {
-        var user = event.currentTarget.querySelector('p').textContent
-        var request1 = new XMLHttpRequest();
-        request1.open("GET", "users/" + user + "/repos");
-        request1.send();
+    // $(".user").on("click" = function (event) {
+    //     var user = event.currentTarget.querySelector('p').textContent
+    //     var request1 = new XMLHttpRequest();
+    //     request1.open("GET", "users/" + user + "/repos");
+    //     request1.send();
 
-        request1.onload = function () {
-            var data = JSON.parse(request1.responseText);
-            var section = document.querySelector("section");
-        }
-
-    })
-
-
+    //     request1.onload = function () {
+    //         var data = JSON.parse(request1.responseText);
+    //         var section = document.querySelector("section");
 }
+
+
+
+
+
 
 var search = document.querySelector("button")
 search.addEventListener("click", handler)
