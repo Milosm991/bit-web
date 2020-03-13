@@ -1,0 +1,30 @@
+body {
+  width: 100%; }
+
+h1 {
+  text-align: center; }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1110px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+.main div {
+  width: 33%;
+  justify-content: space-between; }
+
+div.container {
+  background-color: #463f3f;
+  color: white;
+  width: 100%; }
+
+img {
+  width: 100%;
+  max-width: 370px; }
+
+/*# sourceMappingURL=style.css.map */
