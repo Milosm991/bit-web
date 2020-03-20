@@ -1,4 +1,6 @@
 var query = window.location.search;
+console.log(query);
+
 query.toString()
 var id = query.slice(4);
 
