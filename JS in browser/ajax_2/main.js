@@ -117,6 +117,7 @@ function handler() {
         method: "GET",
         data: { id: 1 },
         dataType: "html"
+        
     });
     request.done(function (url) {
         console.log(url)
@@ -152,6 +153,7 @@ function clickk() {
             var section = document.querySelector("section");
             for (var i = 0; i < data.length; i++) {
                 var divR = document.createElement("div");
+                divR.className = "repo";
                 divR.textContent = data[i].name;
                 section.appendChild(divR)
             }

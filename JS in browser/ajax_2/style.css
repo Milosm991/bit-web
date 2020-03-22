@@ -35,14 +35,11 @@ header {
 input {
   height: 25px;
   width: 80%;
-<<<<<<< HEAD
-=======
   border-radius: 15px;
   padding-left: 5px;
   border: solid, 5px;
   margin-bottom: 40px;
   margin-left: 15px;
->>>>>>> fe25b05fe520cdf165edb8022b3e8f7e5f775614
 }
 img {
   width: 100%;
@@ -72,21 +69,32 @@ p {
 h3 {
   text-align: center;
   font-size: 30px;
-<<<<<<< HEAD
-=======
   font-size: 35px;
->>>>>>> fe25b05fe520cdf165edb8022b3e8f7e5f775614
 }
 button {
   width: 100px;
   height: 30px;
-<<<<<<< HEAD
-}
-=======
   background-color: rgb(79, 150, 179);
   border-radius: 15px;
   color: aliceblue;
   border: 0px;
 }
-
->>>>>>> fe25b05fe520cdf165edb8022b3e8f7e5f775614
+section{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+.repo{
+  border: solid 5px skyblue;
+  border-radius: 10px;
+  text-align: center;
+  height: 50%;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(196, 10, 10);
+  font-style: oblique;
+  font-weight: bold;
+}
