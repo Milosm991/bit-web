@@ -18,7 +18,7 @@ export const profile = () => {
 }
 
 export const nexxt = () => {
-
+    
     btnNext.addEventListener('click', nextP)
 }
 

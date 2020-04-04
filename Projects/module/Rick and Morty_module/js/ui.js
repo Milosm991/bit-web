@@ -6,6 +6,8 @@ export let btnNext = document.querySelector('.next')
 export let btnPrev = document.querySelector('.prev')
 export let count = 1;
 
+
+
 export const render = (chara) => {
     let main = document.querySelector(".row")
 
@@ -20,6 +22,7 @@ export const render = (chara) => {
         para.className = "name"
         div.className = "col";
         link.setAttribute('href', "profile.html?id=" + chara.results[i].id);
+        link.setAttribute('target', '_blank')
         img.setAttribute('src', chara.results[i].image);
         para.textContent = chara.results[i].name;
         button.textContent = 'Like';
@@ -52,6 +55,7 @@ export const next = (res) => {
     let main = document.querySelector(".row")
         main.innerHTML='';
         count ++;
+        console.log(count);
         for(let i =0; i<res.results.length; i++){
             let div = document.createElement('div');
             let para = document.createElement('p');
@@ -62,6 +66,7 @@ export const next = (res) => {
             para.className = "name"
             div.className = "col";
             link.setAttribute('href', "profile.html?id=" + res.results[i].id);
+            link.setAttribute('target', '_blank')
             img.setAttribute('src', res.results[i].image);
             para.textContent = res.results[i].name;
             button.textContent = 'Like';
@@ -87,6 +92,7 @@ export const previous = (abc) => {
             para.className = "name"
             div.className = "col";
             link.setAttribute('href', "profile.html?id=" + abc.results[i].id);
+            link.setAttribute('target', '_blank')
             img.setAttribute('src', abc.results[i].image);
             para.textContent = abc.results[i].name;
             button.textContent = 'Like';

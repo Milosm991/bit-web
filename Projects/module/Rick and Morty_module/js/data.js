@@ -14,21 +14,25 @@ export const fetchSingleChar = (onSucc) => {
 }
 
 export const nextPage = (onSucc) => {
+    let x = count
+    ++x
     if(count===25){
         alert('Go back!')
         return
     }
-    fetchChar(`https://rickandmortyapi.com/api/character/?page=${count}`, (np) => {
+    fetchChar(`https://rickandmortyapi.com/api/character/?page=${x}`, (np) => {
         onSucc(np)
     })
 }
 
 export const prevPage = (onSucc) => { 
+    let x = count
+    --x
     if(count===1){
         alert('Go forward!')
         return
     }
-    fetchChar(`https://rickandmortyapi.com/api/character/?page=${count}`, (pp) => {
+    fetchChar(`https://rickandmortyapi.com/api/character/?page=${x}`, (pp) => {
         onSucc(pp)
     })
 }
