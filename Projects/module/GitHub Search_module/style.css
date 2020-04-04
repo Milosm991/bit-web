@@ -1,0 +1,100 @@
+/* body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* First div */
+
+/* #one img {
+    width: 33%;
+    margin-bottom: 20px;
+} */
+
+/* Second div*/
+
+/* #two img {
+    width: 33%;
+/* } */
+
+/* button {
+  position: fixed;
+}
+img {
+  width: 200px;
+} */
+/*  */
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+header {
+  margin-top: 40px;
+}
+input {
+  height: 25px;
+  width: 80%;
+  border-radius: 15px;
+  padding-left: 5px;
+  border: solid, 5px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.profile {
+  width: 100%;
+}
+.profile div {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+
+p {
+  margin: 0 auto;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-size: 35px;
+}
+button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(79, 150, 179);
+  border-radius: 15px;
+  color: aliceblue;
+  border: 0px;
+}
+section{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+.repo{
+  border: solid 5px skyblue;
+  border-radius: 10px;
+  text-align: center;
+  height: 50%;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(196, 10, 10);
+  font-style: oblique;
+  font-weight: bold;
+}

@@ -1,20 +1,15 @@
-let nextt = document.querySelector('.next')
-let prev = document.querySelector('.prev')
-let count = 1;
+let query = window.location.search;
+query.toString()
+export const id = query.slice(4);
+let name = document.querySelector('h1')
+export let btnNext = document.querySelector('.next')
+export let btnPrev = document.querySelector('.prev')
+export let count = 1;
 
-
-const characters = $.ajax({
-    url: `https://rickandmortyapi.com/api/character/`,
-    method: "GET"
-});
-
-characters.done(function(){
-    let data = JSON.parse(characters.responseText);
-
-    console.log(data);
-
+export const render = (chara) => {
     let main = document.querySelector(".row")
-    for(let i =0; i<data.results.length; i++){
+
+    for(let i =0; i<chara.results.length; i++){
         let div = document.createElement('div');
         let para = document.createElement('p');
         let img = document.createElement('img');
@@ -24,9 +19,9 @@ characters.done(function(){
         button.className = "like";
         para.className = "name"
         div.className = "col";
-        link.setAttribute('href', "profile.html?id=" + data.results[i].id);
-        img.setAttribute('src', data.results[i].image);
-        para.textContent = data.results[i].name;
+        link.setAttribute('href', "profile.html?id=" + chara.results[i].id);
+        img.setAttribute('src', chara.results[i].image);
+        para.textContent = chara.results[i].name;
         button.textContent = 'Like';
         div.appendChild(img);
         div.appendChild(para);
@@ -34,30 +29,30 @@ characters.done(function(){
         link.appendChild(div)
         main.appendChild(link);
     }
-    
 
-});
+}
 
-let next = function(){
-    if(count===25){
-        alert('Go back!')
-        return
-    }
-    count ++;
+export const renderSingleChar = (singCh) => {
+        let div = document.querySelector(".profile")
+        let img = document.createElement("img");
+        img.setAttribute("src", singCh.image)
+        img.className = "profimg"
+        div.appendChild(img)
+        name.textContent = singCh.name
+        $('.status').append(singCh.status)
+        $('.species').append(singCh.species)
+        $('.type').append(singCh.type)
+        $('.gender').append(singCh.gender)
+        $('.origin').append(singCh.origin.name)
+        $('.location').append(singCh.location.name)
 
-    const characters = $.ajax({
-        url: `https://rickandmortyapi.com/api/character/?page=`+ count,
-        method: "GET"
-    });
-    
-    characters.done(function(){
-        let data = JSON.parse(characters.responseText);
-    
-        console.log(data);
-        
-        let main = document.querySelector(".row")
+}
+
+export const next = (res) => {
+    let main = document.querySelector(".row")
         main.innerHTML='';
-        for(let i =0; i<data.results.length; i++){
+        count ++;
+        for(let i =0; i<res.results.length; i++){
             let div = document.createElement('div');
             let para = document.createElement('p');
             let img = document.createElement('img');
@@ -66,9 +61,9 @@ let next = function(){
             button.className ="like";
             para.className = "name"
             div.className = "col";
-            link.setAttribute('href', "profile.html?id=" + data.results[i].id);
-            img.setAttribute('src', data.results[i].image);
-            para.textContent = data.results[i].name;
+            link.setAttribute('href', "profile.html?id=" + res.results[i].id);
+            img.setAttribute('src', res.results[i].image);
+            para.textContent = res.results[i].name;
             button.textContent = 'Like';
             div.appendChild(img);
             div.appendChild(para);
@@ -76,29 +71,13 @@ let next = function(){
             link.appendChild(div)
             main.appendChild(link);
         }
-    })
 }
 
-let previous = function(){
-    if(count===1){
-        alert('Go forward!')
-        return
-    }
-    count --;
-
-    const characters = $.ajax({
-        url: `https://rickandmortyapi.com/api/character/?page=`+ count,
-        method: "GET"
-    });
-    
-    characters.done(function(){
-        let data = JSON.parse(characters.responseText);
-    
-        console.log(data);
-        
+export const previous = (abc) => {
         let main = document.querySelector(".row")
         main.innerHTML='';
-        for(let i =0; i<data.results.length; i++){
+        count --;
+        for(let i =0; i<abc.results.length; i++){
             let div = document.createElement('div');
             let para = document.createElement('p');
             let img = document.createElement('img');
@@ -107,9 +86,9 @@ let previous = function(){
             button.className = "like";
             para.className = "name"
             div.className = "col";
-            link.setAttribute('href', "profile.html?id=" + data.results[i].id);
-            img.setAttribute('src', data.results[i].image);
-            para.textContent = data.results[i].name;
+            link.setAttribute('href', "profile.html?id=" + abc.results[i].id);
+            img.setAttribute('src', abc.results[i].image);
+            para.textContent = abc.results[i].name;
             button.textContent = 'Like';
             div.appendChild(img);
             div.appendChild(para);
@@ -117,8 +96,4 @@ let previous = function(){
             link.appendChild(div)
             main.appendChild(link);
         }
-    })
 }
-
-nextt.addEventListener("click", next)
-prev.addEventListener('click', previous)

@@ -1,0 +1,45 @@
+body {
+  width: 100%; }
+
+h1 {
+  text-align: center; }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1110px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+.main div {
+  width: 33%;
+  justify-content: space-between; }
+
+img {
+  width: 100%; }
+
+.post {
+  width: 100%; }
+
+ul {
+  padding: 0px; }
+
+.searchul {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  z-index: 1;
+  list-style: none;
+  border: solid 1px gray;
+  text-align: left;
+  padding-left: 0;
+  width: 208px; }
+  .searchul .search {
+    color: black;
+    border-bottom: solid 0.5px #d6cbcb;
+    padding: 2px; }
+
+/*# sourceMappingURL=style.css.map */

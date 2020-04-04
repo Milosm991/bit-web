@@ -122,6 +122,8 @@ function handler() {
     request.done(function (url) {
         console.log(url)
         var data = JSON.parse(url);
+        console.log(data);
+        
 
         for (var i = 0; i < data.items.length; i++) {
             var img = document.createElement("img")

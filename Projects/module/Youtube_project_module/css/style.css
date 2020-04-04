@@ -26,7 +26,7 @@ button{
     margin-left: 20px;
     height: 50px;
     width: 100px;
-    border: none;
+    border: red solid 2px;
     border-radius: 10px;
     font-size: x-large;
 }
@@ -41,8 +41,20 @@ main{
     flex-wrap: wrap;
 }
 .video{
-    width: 33%;
+    width: 30%;
+    border: red solid 2px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+.video h2 {
+    font-family: monospace;
+    text-align: center;
 }
 .thumb{
     width: 100%;
+    border-radius: 15px;
+}
+iframe{
+    border-radius: 20px;
+    border: red solid 2px;
 }

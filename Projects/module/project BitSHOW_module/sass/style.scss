@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1110px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.main div {
+    width: 33%;
+    justify-content: space-between;
+}
+
+// div.container {
+//     background-color: rgb(70, 63, 63);
+//     color: white;
+//     width: 100%;
+// }
+img {
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+}
+
+ul {
+    padding: 0px;
+}
+.searchul{
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    z-index: 1;
+    list-style: none;
+    border: solid 1px gray;
+    text-align: left;
+    padding-left: 0;
+    width: 208px;
+    .search{
+        color: black;
+        border-bottom: solid 0.5px rgb(214, 203, 203);
+        padding: 2px;
+    }
+}

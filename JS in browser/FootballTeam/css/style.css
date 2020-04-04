@@ -3,13 +3,13 @@
     clear: both;
     display: table;
 }
+body{
+    background-image: url(../images/del.jpg);
+}
 .main{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-image: url(../images/field.png);
-    
-
 }
 .firsteleven{
     width: 100%;
@@ -20,24 +20,36 @@
 }
 .firsteleven div{
     float: left;
-    min-width: 30%;
     width: 30%;
     margin-right: 5px;
     align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.firsteleven div img{
+    width: 100%;
 }
 .reserves div{
     float: left;
     width: 25%;
+    border-top: solid 5px red;
+    padding-top: 10px;
+    text-align: center;
+}
+.reserves div img{
+    width: 90%;
 }
 header {
     max-width: 1200px;
     width:100%;
     height: 100px;
-    background-color: black;
     margin : 0 auto;
-    border: solid 3px white;
+    position: relative;
 }
-
+.logo{
+    width: 100px;
+    height: 100px;
+}
 .redtext {
     color:red;
 }
@@ -48,17 +60,17 @@ h1{
     margin: 0 auto;
     text-align: center;
     font-size: 5em;
-    
-    
+    position: absolute;
+    left: 28%;
+    top: 0%;
 }
-body{
-    background-color: rgb(31, 30, 30);
-}
-.player{
-    text-align: center;
+.pehari{
+    position: absolute;
+    right: 0%;
+    top: 0%;
 }
 .player p {
     font-size: 1.3em;
     font-weight: bold;
-    
+    color: white;
 }

@@ -68,8 +68,8 @@ a {
 }
 .text{
    position: absolute;
-   left: 17px;
-    top: 249px;
+   left: 4%;
+   top: 35%;
    color:white;
    font-size: 45px;
    width: 100%;
@@ -77,13 +77,13 @@ a {
   }
   .us{
       position: relative;
-      left: 512px;
+      left: 42%;
       font-family: RobotoLight;
   }
   .read{
       position: absolute;
-      left: 511px;
-      top: 391px;
+      left: 45%;
+      top: 60%;
       background-color: rgb(14, 68, 138);
       color: white;
       padding: 10px;
@@ -356,7 +356,7 @@ input{
     .read {
         position: absolute;
         left: 470px;
-        top: 360px;
+        top: 395px;
     }
     .contacth4 {
         margin: 33px 4px 27px 93px;
@@ -380,8 +380,8 @@ input{
     .read{
         
         position: absolute;
-        left: 263px;
-        top: 260px;
+        left: 241px;
+        top: 242px;
     }
     .us{
         position: relative;
