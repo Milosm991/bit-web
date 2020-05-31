@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    
+}
+
+.list:hover{
+    cursor: pointer;
+    color: turquoise;
+}
+
+.grid:hover{
+    cursor: pointer;
+    color: turquoise;
+}
+
+.rld:hover{
+    color: turquoise
+}
+
+.aboutt:hover{
+    color: turquoise
+}
+.src:focus{
+    
+}
+
+.female{ 
+    background-color: #ffebee;
+}
+
+
+/* header */
+header{
+    text-align: center;
+    background-color: rgb(253, 160, 176);
+    position: relative;
+}
+
+.about{
+    color: black;
+    padding: 0;
+    margin-top: 50px;
+}
+header h5{
+    position: absolute;
+    top: 35%;
+    right: 180px;
+    color: white;
+}
+.rld{
+    position: absolute;
+    top: 40%;
+    right: 90px;
+    color: white;
+}
+
+.grid {
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    color: white;
+    display: block;
+}
+
+.list{
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    color: white;
+    display: none;
+}
+h1{
+    color: white;
+    padding: 16px;
+}
+
+.search{
+    width: 90%;
+    /* margin-left: 50px; */
+    margin: 0 auto;
+    /* margin-bottom: 20px; */
+}
+.fas{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.src{
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px black;
+    padding: 8px;
+}
+/* main */
+
+.main{
+    position: relative;
+    /* min-height: 100%; */
+}
+
+.counter{
+    text-align: right;
+}
+ul{
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+li{
+    display: flex;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.avatar{ 
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.avatar img{
+    border-radius: 50%;
+}
+
+.info{
+    margin-left: 20px;
+}
+.info p{
+    margin-bottom: 0;
+}
+
+/* cards */
+
+.cards{
+    position: absolute;
+    top: 0;
+    left: 170px;
+    /* display: none; */
+}
+
+.card{
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+
+.card img{
+    height: 250px;
+    
+}
+/* footer */
+
+footer{
+    background-color: rgb(253, 160, 176);
+    height: 80px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.timer{
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    color: white;
+}
+
+h4{
+    color: white;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+/* load */
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: rgb(253, 160, 176);;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+
+  @media (max-width: 740px){
+      .bitPers{
+          margin-left: -228px;
+      }
+  }
