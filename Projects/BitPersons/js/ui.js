@@ -18,19 +18,19 @@ function hideEmail(email) {
 }
 
 export const renderPerson = (persons) => {
-   
+
     let male = 0;
     let female = 0;
-    
-    persons.results.forEach(element => {
-       
-        let dateOfBirth = new Date(element.dob.date); 
 
-        if(element.gender === 'female'){
-            female ++;
+    persons.results.forEach(element => {
+
+        let dateOfBirth = new Date(element.dob.date);
+
+        if (element.gender === 'female') {
+            female++;
         } else {
-            male ++;
-        }   
+            male++;
+        }
         let stats = `<p>Male: ${male}, Female: ${female}</p>`;
         counter.innerHTML = stats;
         let genderr = element.gender === "female" ? "female" : "";
@@ -44,16 +44,16 @@ export const renderPerson = (persons) => {
                 <div class='info'>
                     <p><b><i>${element.name.first} ${element.name.last}</i></b></p>
                     <p><i class="fa fa-envelope"></i> Email: ${hideEmail(element.email)}</p>
-                    <p><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth()+1}.${dateOfBirth.getFullYear()}</p>
+                    <p><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth() + 1}.${dateOfBirth.getFullYear()}</p>
                 </div>
             </li>
             `
 
         ul.innerHTML += listView;
-     
+
         const load = document.querySelector(".load");
         load.style.display = "none";
-        
+
 
         let gender = element.gender === "female" ? "female" : "";
         let cardP = `
@@ -63,52 +63,52 @@ export const renderPerson = (persons) => {
                         <div class="card-body ${gender}">
                             <p><b><i>${element.name.first} ${element.name.last}</i></b></p>
                             <p class="card-title"><i class="fa fa-envelope"></i> Email: ${hideEmail(element.email)}</p>
-                            <p class="card-text"><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth()+1}.${dateOfBirth.getFullYear()}</p>
+                            <p class="card-text"><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth() + 1}.${dateOfBirth.getFullYear()}</p>
                         </div>
                     </div>
             </div>`;
 
         card.innerHTML += cardP;
-        
+
     });
 
 }
 lastSeen.innerHTML = `<i><b>Last update: ${lastUpdate()}</b></i>`
 
 export const search = () => {
-        const inp = inputVal().toLowerCase()
-        console.log(inp);
-    
-        const data = JSON.parse(localStorage.getItem("persons"))
+    const inp = inputVal().toLowerCase()
+    console.log(inp);
 
-        const ppl = data.results.filter(element => {
-              if(element.name.first.toLowerCase().indexOf(inp) != -1  || element.name.last.toLowerCase().indexOf(inp) != -1){
-                return true
-                // } else {
-                //      main.innerHTML = `<img src='../img/nothing.png'>`
-                }
-        })
-        singPers(ppl)
-        
+    const data = JSON.parse(localStorage.getItem("persons"))
+
+    const ppl = data.results.filter(element => {
+        if (element.name.first.toLowerCase().indexOf(inp) != -1 || element.name.last.toLowerCase().indexOf(inp) != -1) {
+            return true
+            // } else {
+            //      main.innerHTML = `<img src='../img/nothing.png'>`
+        }
+    })
+    singPers(ppl)
+
 }
 
 const singPers = (ppl) => {
-    
+
     let male = 0;
     let female = 0;
-    
+
     ul.innerHTML = ''
     card.innerHTML = ''
 
     Array.from(ppl).forEach(element => {
-        
-        let dateOfBirth = new Date(element.dob.date); 
 
-        if(element.gender === 'female'){
-            female ++;
+        let dateOfBirth = new Date(element.dob.date);
+
+        if (element.gender === 'female') {
+            female++;
         } else {
-            male ++;
-        }   
+            male++;
+        }
 
         let stats = `<p>Male: ${male}, Female: ${female}</p>`;
         counter.innerHTML = stats;
@@ -123,16 +123,16 @@ const singPers = (ppl) => {
                 <div class='info'>
                     <p><b><i>${element.name.first} ${element.name.last}</i></b></p>
                     <p><i class="fa fa-envelope"></i> Email: ${hideEmail(element.email)}</p>
-                    <p><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth()+1}.${dateOfBirth.getFullYear()}</p>
+                    <p><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth() + 1}.${dateOfBirth.getFullYear()}</p>
                 </div>
             </li>
             `
 
-            ul.innerHTML += listView;
-     
+        ul.innerHTML += listView;
+
         const load = document.querySelector(".load");
         load.style.display = "none";
-        
+
 
         let gender = element.gender === "female" ? "female" : "";
         let cardP = `
@@ -142,12 +142,13 @@ const singPers = (ppl) => {
                         <div class="card-body ${gender}">
                             <p><b><i>${element.name.first} ${element.name.last}</i></b></p>
                             <p class="card-title"><i class="fa fa-envelope"></i> Email: ${hideEmail(element.email)}</p>
-                            <p class="card-text"><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth()+1}.${dateOfBirth.getFullYear()}</p>
+                            <p class="card-text"><i class="fa fa-birthday-cake"></i> Birth Date: ${dateOfBirth.getDate()}.${dateOfBirth.getMonth() + 1}.${dateOfBirth.getFullYear()}</p>
                         </div>
                     </div>
             </div>`;
 
         card.innerHTML += cardP;
-        
+
     }
-)}
+    )
+}

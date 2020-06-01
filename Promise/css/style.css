@@ -1,0 +1,23 @@
+div {
+  border: solid;
+  margin-bottom: 10px;
+  text-align: center;
+}
+button {
+  background-color: grey;
+  border-radius: 5px;
+  color: honeydew;
+  margin-left: 48%;
+  padding: 8px;
+  font-weight: bolder;
+}
+button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+div:hover {
+  background-color: goldenrod;
+}
+body:hover {
+  background-color: rgb(153, 101, 101);
+}
