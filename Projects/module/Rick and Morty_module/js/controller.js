@@ -1,24 +1,24 @@
 import { characters, fetchSingleChar, nextPage, prevPage } from "./data.js"
-import { render, renderSingleChar, next, previous, btnNext, btnPrev } from "./ui.js"
+import { btnNext, btnPrev } from "./ui.js"
 
 
 const nextP = () => {
-    nextPage(next)
+    nextPage()
 }
 
 const prevP = () => {
-    prevPage(previous)
+    prevPage()
 }
 export const init = () => {
-    characters(render)
+    characters()
 }
 
 export const profile = () => {
-    fetchSingleChar(renderSingleChar)
+    fetchSingleChar()
 }
 
 export const nexxt = () => {
-    
+
     btnNext.addEventListener('click', nextP)
 }
 

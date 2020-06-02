@@ -1,38 +1,65 @@
-import { fetchChar } from './fetch.js'
-import { id, count } from './ui.js'
+import { id, count, render, renderSingleChar, next, previous } from './ui.js'
 
-export const characters = (onSucc) => {
-    fetchChar(`https://rickandmortyapi.com/api/character/`, (char) => {
-        onSucc(char)
-    })
+export const characters = () => {
+    fetch(`https://rickandmortyapi.com/api/character/`)
+        .then(response => {
+            if (response.ok) {
+                return response.json()
+            } else {
+                throw new Error(response.json().message)
+            }
+        })
+        .then(data => render(data))
+        .catch(err => console.log(err));
 }
 
-export const fetchSingleChar = (onSucc) => {
-    fetchChar(`https://rickandmortyapi.com/api/character/${id}`, (single) => {
-        onSucc(single)
-    })
+export const fetchSingleChar = () => {
+    fetch(`https://rickandmortyapi.com/api/character/${id}`)
+        .then(response => {
+            if (response.ok) {
+                return response.json()
+            } else {
+                throw new Error(response.json().message)
+            }
+        })
+        .then(data => renderSingleChar(data))
+        .catch(err => console.log(err));
 }
 
-export const nextPage = (onSucc) => {
+export const nextPage = () => {
     let x = count
     ++x
-    if(count===25){
+    if (count === 25) {
         alert('Go back!')
         return
     }
-    fetchChar(`https://rickandmortyapi.com/api/character/?page=${x}`, (np) => {
-        onSucc(np)
-    })
+    fetch(`https://rickandmortyapi.com/api/character/?page=${x}`)
+        .then(response => {
+            if (response.ok) {
+                return response.json()
+            } else {
+                throw new Error(response.json().message)
+            }
+        })
+        .then(data => next(data))
+        .catch(err => console.log(err));
 }
 
-export const prevPage = (onSucc) => { 
+export const prevPage = () => {
     let x = count
     --x
-    if(count===1){
+    if (count === 1) {
         alert('Go forward!')
         return
     }
-    fetchChar(`https://rickandmortyapi.com/api/character/?page=${x}`, (pp) => {
-        onSucc(pp)
-    })
+    fetch(`https://rickandmortyapi.com/api/character/?page=${x}`)
+        .then(response => {
+            if (response.ok) {
+                return response.json()
+            } else {
+                throw new Error(response.json().message)
+            }
+        })
+        .then(data => previous(data))
+        .catch(err => console.log(err));
 }
