@@ -8,6 +8,7 @@ export let count = 1;
 
 
 
+
 export const render = (chara) => {
     let main = document.querySelector(".row")
 
@@ -32,6 +33,8 @@ export const render = (chara) => {
         link.appendChild(div)
         main.appendChild(link);
     }
+
+   
 
 }
 

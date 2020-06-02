@@ -1,10 +1,13 @@
-// export const fetchChar = (url, onSucc) => {
-//     const request = new XMLHttpRequest()
-//     request.open('GET', url)
-//     request.send()
+export const request = (url, onSucc) => {
+    fetch(url)
+        .then(response => {
+            if (response.ok) {
+                return response.json()
+            } else {
+                throw new Error(response.json().message)
+            }
+        })
+        .then(data => onSucc(data))
+        .catch(err => console.log(err));
+}
 
-//     request.addEventListener('load', () => {
-//         let response = JSON.parse(request.responseText)
-//         onSucc(response)
-//     })
-// }

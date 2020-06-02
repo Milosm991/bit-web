@@ -1,29 +1,12 @@
 import { id, count, render, renderSingleChar, next, previous } from './ui.js'
+import { request } from './fetch.js'
 
 export const characters = () => {
-    fetch(`https://rickandmortyapi.com/api/character/`)
-        .then(response => {
-            if (response.ok) {
-                return response.json()
-            } else {
-                throw new Error(response.json().message)
-            }
-        })
-        .then(data => render(data))
-        .catch(err => console.log(err));
+    request(`https://rickandmortyapi.com/api/character/`, render)
 }
 
 export const fetchSingleChar = () => {
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
-        .then(response => {
-            if (response.ok) {
-                return response.json()
-            } else {
-                throw new Error(response.json().message)
-            }
-        })
-        .then(data => renderSingleChar(data))
-        .catch(err => console.log(err));
+    request(`https://rickandmortyapi.com/api/character/${id}`, renderSingleChar)
 }
 
 export const nextPage = () => {
@@ -33,16 +16,7 @@ export const nextPage = () => {
         alert('Go back!')
         return
     }
-    fetch(`https://rickandmortyapi.com/api/character/?page=${x}`)
-        .then(response => {
-            if (response.ok) {
-                return response.json()
-            } else {
-                throw new Error(response.json().message)
-            }
-        })
-        .then(data => next(data))
-        .catch(err => console.log(err));
+    request(`https://rickandmortyapi.com/api/character/?page=${x}`, next)
 }
 
 export const prevPage = () => {
@@ -52,14 +26,5 @@ export const prevPage = () => {
         alert('Go forward!')
         return
     }
-    fetch(`https://rickandmortyapi.com/api/character/?page=${x}`)
-        .then(response => {
-            if (response.ok) {
-                return response.json()
-            } else {
-                throw new Error(response.json().message)
-            }
-        })
-        .then(data => previous(data))
-        .catch(err => console.log(err));
+    request(`https://rickandmortyapi.com/api/character/?page=${x}`, previous)
 }
